@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #fff;
+  }
+.btn-default{
+    width: 200px;
+}
+.navbar-logo .logo-img,
+.logo-text {
+  display: inline-block;
+  vertical-align: middle; /* 确保图片和文字垂直居中 */
+  line-height: 50px;
+}
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 100px;
+}
+.logo-img {
+  padding-left: 10px;
+}
+.navbar-logo a{
+    text-decoration: none;
+    color: #777;
+}

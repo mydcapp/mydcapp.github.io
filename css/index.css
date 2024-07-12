@@ -25,7 +25,7 @@
 .btn-primary {
   color: #fff;
   background: linear-gradient(129deg, #1bed77 16%, #1bdd8a 42%, #1eca86 91%);
-  border-color: #29c2ff;
+  border-color: #FFF;
 }
 .jumbotron {
   background-color: #fff;
@@ -43,8 +43,8 @@
   margin-bottom: 10px;
 }
 .model:hover {
-  color: #fff;
-  background-color: #99d2e0;
+
+  background-color: #ffffff;
 }
 .footer p{
   font-size: 16px;
