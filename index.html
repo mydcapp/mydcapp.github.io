@@ -8,195 +8,18 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="shortcut icon" href="favicon.ico" />
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <style>
-    .fakeimg {
-      height: 200px;
-      background: #27c3df;
-    }
-  </style>
-  <style>
-    /* 默认主题 */
-    body {
-      background-color: white;
-      color: black;
-
-    }
-
-    /* 暗主题 */
-    body.dark {
-      background-color: #141414;
-      color: white;
-      .modal-content{
-        background-color: #242424;
-      }
-      .modal-header {
-    padding: 15px;
-    border-bottom: 1px solid #777;
-}
-.modal-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: 1px solid #777;
-}
-      .navbar {
-        background-color: black;
-        border-bottom: 1px solid #4c4d4f;
-      }
-
-      .jumbotron {
-        background-color: #141414;
-        margin-top: 70px;
-      }
-
-      .model {
-        width: 100%;
-        height: 200px;
-        border: 1px solid #4c4d4f;
-        background-color: #141414;
-        padding: 20px;
-        margin-bottom: 10px;
-
-        P {
-          color: #cfd3dc;
-        }
-      }
-
-      .navbar-default .navbar-nav>li>a {
-        color: #ffffff;
-      }
-
-    }
-
-    .btn-switch {
-
-      cursor: pointer;
-      width: 52px;
-      height: 31px;
-      position: relative;
-      top: 10px;
-      border: 1px solid #dfdfdf;
-      background-color: #fdfdfd;
-      box-shadow: #dfdfdf 0 0 0 0 inset;
-      border-radius: 20px;
-      background-clip: content-box;
-      display: inline-block;
-      -webkit-appearance: none;
-      user-select: none;
-      outline: none !important;
-
-    }
-
-    .btn-switch.large {
-      width: 70px;
-      height: 24px;
-      border-radius: 30px;
-    }
-
-    .btn-switch.large:before {
-      content: '';
-      width: 23px;
-      height: 23px;
-      border-radius: 30px;
-    }
-
-    .btn-switch.large:after {
-      content: '默认';
-      color: #999;
-      left: 30px;
-      position: absolute;
-      line-height: 24px;
-      font-size: 14px;
-    }
-
-    .btn-switch.large:checked:after {
-      content: '深色';
-      color: #999;
-      left: 10px;
-      position: absolute;
-      line-height: 24px;
-      font-size: 14px;
-    }
-
-    .btn-switch.large:checked:before {
-      left: 45px;
-    }
-
-    .btn-switch:before {
-      content: '';
-      width: 29px;
-      height: 29px;
-      position: absolute;
-      top: 0px;
-      left: 0;
-      border-radius: 20px;
-      background-color: #fff;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    }
-
-    .btn-switch:checked {
-      border-color: #e4e1e1;
-      box-shadow: #fffefe 0 0 0 16px inset;
-      background-color: #e4e1e1;
-    }
-
-    .btn-switch:checked:before {
-      left: 21px;
-    }
-
-    .btn-switch.btn-switch-animbg {
-      transition: background-color ease 0.4s;
-    }
-
-    .btn-switch.btn-switch-animbg:before {
-      transition: left 0.3s;
-    }
-
-    .btn-switch.btn-switch-animbg:checked {
-      box-shadow: #dfdfdf 0 0 0 0 inset;
-      background-color: #000000;
-      transition: border-color 0.4s, background-color ease 0.4s;
-    }
-
-    .btn-switch.btn-switch-animbg:checked:before {
-      transition: left 0.3s;
-    }
-
-    .btn-switch.btn-switch-anim {
-      transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
-    }
-
-    .btn-switch.btn-switch-anim:before {
-      transition: left 0.3s;
-    }
-
-    .btn-switch.btn-switch-anim:checked {
-      box-shadow: #64bd63 0 0 0 16px inset;
-      background-color: #64bd63;
-      transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
-    }
-
-    .btn-switch.btn-switch-anim:checked:before {
-      transition: left 0.3s;
-    }
-
-    input[type=checkbox]:checked::before {
-      font: normal normal normal 14px/2 FontAwesome;
-    }
-  </style>
-
 </head>
 
 <body>
+
   <!-- NAVBAR -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-
-
-        </button>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
           data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only"></span>
@@ -205,6 +28,7 @@
           <span class="icon-bar"></span>
         </button>
 
+        <!-- logo -->
         <div class="navbar-logo">
           <img src="./images/logo.png" width="38" class="logo-img">
           <span class="logo-text">动次音乐</span>
@@ -228,67 +52,62 @@
               <li><a href="#">PC端APP</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">鸿蒙APP</a></li>
-              <!-- <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li> -->
             </ul>
           </li>
           <li><a href="" data-toggle="modal" data-target="#myModal">关于</a></li>
         </ul>
-        <!-- <form class="navbar-form navbar-center">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form> -->
+        <!-- navbar right -->
         <ul class="nav navbar-nav navbar-right">
           <li style="margin-left: 10px;">
             <label><input class="btn-switch large" type="checkbox" value="" checked="" id="theme-toggle"></label>
             <!-- <button id="theme-toggle">切换主题</button> -->
           </li>
           <li><a href="#">登录 / 注册</a></li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">设置<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">简洁模式</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">全屏（F11）</a></li>
+              <li><a href="#" id="fullscreen-button">全屏（F11）</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">语言</a></li>
             </ul>
           </li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
   </nav>
-
   <!-- NAVBAR END -->
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">关于动次音乐</h4>
-      </div>
-      <div class="modal-body">
-        <p style="color: #777;">
-          动次音乐，是作者利用空闲时间打造的一款纯净无广告，无盈利的音乐软件，本软件遵守法律法规，不具备任何层面上的所谓破解VIP的功能，请广大的下载学习者自行甄别，防止恶意组件以破解VIP的噱头引导下载,本软件也欢迎广大编程爱好者一起加入开发。
-        </p>
-        <p>联系邮箱：2365743617@qq.com</p>
-        <p>作者：joker@xjx</p>
-        <p>欢迎大家一起反馈使用问题！</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">我以了解</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">关于动次音乐</h4>
+        </div>
+        <div class="modal-body">
+          <p style="color: #777;">
+            动次音乐，是作者利用空闲时间打造的一款纯净无广告，无盈利的音乐软件，本软件遵守法律法规，不具备任何层面上的所谓破解VIP的功能，请广大的下载学习者自行甄别，防止恶意组件以破解VIP的噱头引导下载,本软件也欢迎广大编程爱好者一起加入开发。
+          </p>
+          <p>联系邮箱：2365743617@qq.com</p>
+          <p>作者：joker@xjx</p>
+          <p>欢迎大家一起反馈使用问题！</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">我以了解</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <!-- Modal END -->
 
+  <!-- content -->
   <div class="jumbotron">
     <div class="container text-center mt-10" style="margin-top: 5px;">
       <h1>动次音乐</h1>
@@ -329,80 +148,21 @@
   </div>
   <div class="container">
     <div class=" text-align">
-     <center>更多功能开发中，敬请期待！</center>
+      <center>更多功能开发中，敬请期待！</center>
     </div>
   </div>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h2>关于我</h2>
-        <h5>我的照片:</h5>
-        <div class="fakeimg">这边插入图像</div>
-        <p>关于我的介绍..</p>
-        <h3>链接</h3>
-        <p>描述文本。</p>
-        <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#">链接 1</a></li>
-          <li><a href="#">链接 2</a></li>
-          <li><a href="#">链接 3</a></li>
-        </ul>
-        <hr class="hidden-sm hidden-md hidden-lg">
-      </div>
-      <div class="col-sm-8">
-        <h2>标题</h2>
-        <h5>副标题</h5>
-        <div class="fakeimg">图像</div>
-        <p>动次音乐</p>
-        <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
-        <br>
-        <h2>标题</h2>
-        <h5>副标题</h5>
-        <div class="fakeimg">图像</div>
-        <p>一些文本..</p>
-        <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
-      </div>
-    </div>
-  </div>
-</div> -->
+  <!-- content END-->
+
+  <!-- footer -->
   <div class="footer">
     <div class="jumbotron text-center" style="margin-bottom:0">
       <p>本站的所有软件仅供学习与研究</p>
       <p>Copyright ©2024 @DCAPP</p>
     </div>
   </div>
-  <script>
-    const toggle = document.getElementById('theme-toggle');
+  <!-- footer END-->
 
-    // 切换主题函数
-    function toggleTheme() {
-      const body = document.body;
-      body.classList.toggle('dark');
-
-      // 存储主题选择到本地存储
-      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
-    }
-
-    // 监听按钮点击事件
-    toggle.addEventListener('click', toggleTheme);
-
-    // 页面加载时检查之前的选择
-    window.onload = function () {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        document.body.classList.add('dark');
-
-      }
-    };
-
-    // 监听系统主题变化
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-      if (e.matches) {
-        document.body.classList.add('dark');
-      } else {
-        document.body.classList.remove('dark');
-      }
-    });
-  </script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

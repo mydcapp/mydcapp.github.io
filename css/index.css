@@ -1,3 +1,13 @@
+.navbar {
+  background-color: #fff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #2ca8da;
+  font-weight: bold;
+  background-color: transparent;
+}
 .navbar-logo .logo-img,
 .logo-text {
   display: inline-block;
@@ -12,28 +22,18 @@
 .logo-img {
   padding-left: 10px;
 }
-.navbar {
-  background-color: #fff;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-  color: #2ca8da;
-  font-weight: bold;
-  background-color: transparent;
-}
-.btn-primary {
-  color: #fff;
-  background: linear-gradient(129deg, #1bed77 16%, #1bdd8a 42%, #1eca86 91%);
-  border-color: #FFF;
-}
+
 .jumbotron {
   background-color: #fff;
   margin-top: 70px;
 }
-.footer .jumbotron {
-  background-color: #eee;
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(129deg, #1bed77 16%, #1bdd8a 42%, #1eca86 91%);
+  border-color: #fff;
 }
+
 .model {
   width: 100%;
   height: 200px;
@@ -43,9 +43,176 @@
   margin-bottom: 10px;
 }
 .model:hover {
-
   background-color: #ffffff;
 }
-.footer p{
-  font-size: 16px;
+
+.footer .jumbotron {
+  background-color: #eee;
+  p {
+    font-size: 16px;
+  }
+}
+/* 默认主题 */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* 暗主题 */
+body.dark {
+  background-color: #141414;
+  color: white;
+  .modal-content {
+    background-color: #242424;
+  }
+  .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #777;
+  }
+  .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #777;
+  }
+  .navbar {
+    background-color: black;
+    border-bottom: 1px solid #4c4d4f;
+  }
+
+  .jumbotron {
+    background-color: #141414;
+    margin-top: 70px;
+  }
+
+  .model {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #4c4d4f;
+    background-color: #141414;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    P {
+      color: #cfd3dc;
+    }
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+  }
+}
+
+.btn-switch {
+  cursor: pointer;
+  width: 52px;
+  height: 31px;
+  position: relative;
+  top: 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none !important;
+}
+
+.btn-switch.large {
+  width: 70px;
+  height: 24px;
+  border-radius: 30px;
+}
+
+.btn-switch.large:before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  border-radius: 30px;
+}
+
+.btn-switch.large:after {
+  content: "默认";
+  color: #999;
+  left: 30px;
+  position: absolute;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.btn-switch.large:checked:after {
+  content: "深色";
+  color: #999;
+  left: 10px;
+  position: absolute;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.btn-switch.large:checked:before {
+  left: 45px;
+}
+
+.btn-switch:before {
+  content: "";
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-switch:checked {
+  border-color: #e4e1e1;
+  box-shadow: #fffefe 0 0 0 16px inset;
+  background-color: #e4e1e1;
+}
+
+.btn-switch:checked:before {
+  left: 21px;
+}
+
+.btn-switch.btn-switch-animbg {
+  transition: background-color ease 0.4s;
+}
+
+.btn-switch.btn-switch-animbg:before {
+  transition: left 0.3s;
+}
+
+.btn-switch.btn-switch-animbg:checked {
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  background-color: #000000;
+  transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.btn-switch.btn-switch-animbg:checked:before {
+  transition: left 0.3s;
+}
+
+.btn-switch.btn-switch-anim {
+  transition: border cubic-bezier(0, 0, 0, 1) 0.4s,
+    box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+
+.btn-switch.btn-switch-anim:before {
+  transition: left 0.3s;
+}
+
+.btn-switch.btn-switch-anim:checked {
+  box-shadow: #64bd63 0 0 0 16px inset;
+  background-color: #64bd63;
+  transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+}
+
+.btn-switch.btn-switch-anim:checked:before {
+  transition: left 0.3s;
+}
+
+input[type="checkbox"]:checked::before {
+  font: normal normal normal 14px/2 FontAwesome;
 }
