@@ -11,7 +11,7 @@
 .navbar-logo .logo-img,
 .logo-text {
   display: inline-block;
-  vertical-align: middle; /* 确保图片和文字垂直居中 */
+  vertical-align: middle; 
   line-height: 50px;
 }
 .logo-text {
@@ -30,7 +30,7 @@
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(129deg, #1bed77 16%, #1bdd8a 42%, #1eca86 91%);
+  background: #2386ea;
   border-color: #fff;
 }
 
